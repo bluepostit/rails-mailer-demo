@@ -3,8 +3,10 @@ ruby '2.6.3'
 
 gem 'bootsnap', require: false
 gem 'devise'
+gem 'gibbon'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
+gem 'postmark-rails'
 gem 'puma'
 gem 'rails', '5.2.3'
 gem 'redis'
@@ -18,6 +20,7 @@ gem 'webpacker'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'letter_opener'
 end
 
 group :development, :test do

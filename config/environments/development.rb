@@ -36,6 +36,10 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # use letter-opener
+  config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.default_url_options = { host: "yourapp.herokuapp.com" }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
